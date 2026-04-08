@@ -1,176 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>For You 🤍</title>
-
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #ffe6eb, #fff5f7);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    /* Floating hearts */
-    .heart {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background: #ff4d6d;
-      transform: rotate(45deg);
-      animation: float 6s infinite;
-      opacity: 0.6;
-    }
-
-    .heart::before,
-    .heart::after {
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background: #ff4d6d;
-      border-radius: 50%;
-    }
-
-    .heart::before {
-      top: -10px;
-      left: 0;
-    }
-
-    .heart::after {
-      left: -10px;
-      top: 0;
-    }
-
-    @keyframes float {
-      0% {
-        transform: translateY(100vh) rotate(45deg);
-        opacity: 0;
-      }
-      50% {
-        opacity: 0.7;
-      }
-      100% {
-        transform: translateY(-10vh) rotate(45deg);
-        opacity: 0;
-      }
-    }
-
-    .card {
-      position: relative;
-      background: white;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      max-width: 350px;
-      text-align: center;
-      z-index: 10;
-      animation: fadeIn 2s ease;
-    }
-
-    img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 20px;
-      border: 4px solid #ffd6dc;
-    }
-
-    h2 {
-      color: #ff4d6d;
-    }
-
-    .message {
-      font-size: 16px;
-      color: #444;
-      line-height: 1.6;
-    }
-
-    button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      border: none;
-      background: #ff4d6d;
-      color: white;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background: #e6004c;
-    }
-
-    #hiddenMessage {
-      display: none;
-      margin-top: 15px;
-      animation: fadeIn 2s ease;
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(10px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- Hearts -->
-  <script>
-    for (let i = 0; i < 20; i++) {
-      let heart = document.createElement("div");
-      heart.className = "heart";
-      heart.style.left = Math.random() * 100 + "vw";
-      heart.style.animationDuration = (3 + Math.random() * 3) + "s";
-      heart.style.opacity = Math.random();
-      document.body.appendChild(heart);
-    }
-  </script>
-
-  <div class="card">
-    <img src="buhle.png" alt="My Photo">
-
-    <h2 id="title"></h2>
-
-    <div class="message">
-      <p>I made this just for you...</p>
-      <p>Click below 💌</p>
-    </div>
-
-    <button onclick="showMessage()">Open</button>
-
-    <div id="hiddenMessage" class="message">
-      <p id="personalText"></p>
-    </div>
-  </div>
-
-  <script>
-    // 👉 CHANGE THIS NAME
-    const name = "LUTENDO";
-
-    document.getElementById("title").innerText = "Hey " + name + " 🤍";
-
-    document.getElementById("personalText").innerHTML = `
-      I just want you to know how proud I am of you.<br><br>
-      You've come so far, even on days you felt stuck.<br><br>
-      I appreciate you more than I say.<br><br>
-      Thank you for everything... truly 🤍<br><br>
-      Please take care of yourself wherever you are.<br><br>
-      You matter more than you think.<br><br>
-      I'm always rooting for you 🌱
-    `;
-
-    function showMessage() {
-      document.getElementById("hiddenMessage").style.display = "block";
-    }
-  </script>
-
-</body>
-</html>
+    <head>
+  <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Home page</h1>
+        <h2>This ia a heading</h2>
+        <h3>This ia a heading</h3>
+        <h4>This ia a heading</h4>
+        <h5>This ia a heading</h5>
+        <h6>This ia a heading</h6>
+        <p>hello everyone</p>
+        <p>Welcome to FNB APP ACADEMY</p>
+        <a href="boat.html"><img src="images/boat.jpg" height="120"/></a>
+        <a href="cablecar.html"><img src="images/cablecar.jpg" height="120"/></a>
+        <a href="city.html"><img src="images/city.jpg" height="120"/></a>
+        <a href="plane.html"><img src="images/plane.jpg" height="120"/></a>
+       <a href="plane2.html"><img src="images/plane2.jpg" height="120"/></a>
+        <a href="truck.html"><img src="images/truck.jpg" height="120"/></a>
+        <a href="http://www.google.com">Click here to go to Google</a>
+        <a href=""http://www.itvarsity.org">Click here to go to IT varsity website</a>
+        <a href="about.html">about Us</a>
+    </body>
+</html>. 
